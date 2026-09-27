@@ -1,0 +1,10 @@
+# 统一换行符处理，避免 Windows / macOS 协作时出现整文件 diff
+* text=auto
+
+# .bat 已在 Windows 实测可用，不让 git 做任何转换
+*.bat -text
+
+# 二进制
+*.png binary
+*.jpg binary
+*.pdf binary
